@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/app_background" >
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/logo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imglogo"
+        android:text="For Job Aspirants and Employers "
+        android:textSize="@dimen/textcaptionsize"
+        android:textColor="@color/logocolortwo"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/layout_option_one"
+
+        android:weightSum="9"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:layout_gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Looking for A Job? "
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/logocolortwo"/>
+
+        </LinearLayout>
+
+        <com.starwings.app.haijobs.components.CircleButton
+            android:id="@+id/img_job_seeker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_job_seeker"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:layout_weight="4"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_employer"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layout_option_one"
+        android:layout_alignParentRight="true"
+        android:id="@+id/layout_option_two"
+        android:layout_marginTop="30dp"
+        android:weightSum="9"
+        >
+
+        <com.starwings.app.haijobs.components.CircleButton
+            android:id="@+id/img_recruiter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_job_seeker"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:layout_weight="4"
+            android:padding="5dp"
+            android:background="@null"
+            app:cb_color="@color/colorPrimary"
+            app:srcCompat="@drawable/ic_employer_ic"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:layout_gravity="center_vertical|right"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Are You an Employer? "
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/logocolortwo"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

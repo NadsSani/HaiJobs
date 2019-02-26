@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/app_background" >
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+    <ProgressBar
+        android:id="@+id/pbProcessing"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtCpyRight"
+        android:indeterminateOnly="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/vendor_name"
+        android:padding="10dp"
+        android:id="@+id/txtCpyRight"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imglogo"
+        android:text="For Job Aspirants and Employers "
+        android:textColor="@color/logocolortwo"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+         />
+</RelativeLayout>

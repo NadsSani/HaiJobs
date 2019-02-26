@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/app_background"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/innerlogo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/imglogo"
+        android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:text="WELCOME " />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_margin="10dp"
+        android:id="@+id/card_profiles"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prof_heading"
+                android:text="PROFILES"
+                android:layout_margin="5dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/prof_heading"
+                android:id="@+id/line1"
+                android:layout_marginRight="30dp"
+                android:background="@color/logocolortwo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prof_content"
+                android:padding="10dp"
+                android:text="View Sorted Profiles Matching Your Recent Vacancies"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/line1"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnViewProf"
+                android:text="VIEW"
+                android:background="@drawable/employer_home_btn"
+
+                android:layout_below="@+id/prof_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/card_profiles"
+        android:id="@+id/card_response"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_margin="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/response_heading"
+                android:text="RESPONSES"
+                android:layout_margin="5dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/response_heading"
+                android:id="@+id/line21"
+                android:layout_marginRight="30dp"
+                android:background="@color/logocolortwo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/response_content"
+                android:padding="10dp"
+                android:text="View Details of Responded Candidates Here"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/line21"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnViewResp"
+                android:text="VIEW"
+                android:background="@drawable/employer_home_btn"
+                android:layout_below="@+id/response_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/card_response"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_margin="10dp"
+        android:id="@+id/card_account"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/acc_heading"
+                android:text="ACCOUNT"
+                android:layout_margin="5dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/acc_heading"
+                android:id="@+id/line31"
+                android:layout_marginRight="30dp"
+                android:background="@color/logocolortwo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/account_content"
+                android:padding="10dp"
+                android:text="View Your Account Details Here"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/line31"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnViewAcc"
+                android:text="VIEW"
+                android:background="@drawable/employer_home_btn"
+                android:layout_below="@+id/account_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    </ScrollView>
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+
+        fab:menu_fab_size="normal"
+        fab:menu_showShadow="true"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_colorNormal="@color/colorPrimary"
+        fab:menu_colorPressed="@color/logocolortwo"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_icon="@drawable/menu"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_position="right"
+        fab:menu_openDirection="up"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_fab_label="MENU"
+  >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_post_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/postjob"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/logocolortwo"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:fab_size="normal"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            fab:fab_label="Post A Job" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_about_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/info_button"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/logocolortwo"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:fab_size="normal"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            fab:fab_label="About Us" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logout"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/logocolortwo"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:fab_size="normal"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            fab:fab_label="Log Out" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

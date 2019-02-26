@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+  <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lin_logo_layout"
+            android:background="@drawable/app_background"
+
+            >
+
+            <ImageView
+                android:id="@+id/imglogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/innerlogo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For Job Aspirants and Employers "
+                android:layout_below="@+id/imglogo"
+                android:id="@+id/txtcaplogo"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerHorizontal="true"
+                />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtcaplogo"
+        android:layout_above="@+id/registerbtn"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            app:errorTextAppearance="@style/error_appearance"
+            app:errorEnabled="true"
+            android:id="@+id/tinpl_empname"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/ed_org_name"
+                android:layout_margin="5dp"
+                android:inputType="text"
+                android:hint="Employer Name"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            app:errorTextAppearance="@style/error_appearance"
+            app:errorEnabled="true"
+            android:id="@+id/tinpl_empaddress"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/txtAddressLineOne"
+                android:inputType="textPostalAddress"
+                android:layout_margin="5dp"
+                android:hint="Address Line 1"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/txtAddressLineTwo"
+                android:inputType="textPostalAddress"
+                android:layout_margin="5dp"
+                android:hint="Address Line 2 [ Optional ]" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/txtPincode"
+                android:inputType="number"
+                android:layout_margin="5dp"
+                android:hint="Pincode [ Optional ]"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            app:errorTextAppearance="@style/error_appearance"
+            app:errorEnabled="true"
+            android:id="@+id/tinpl_officeno"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/txtContact"
+                android:layout_margin="5dp"
+                android:inputType="phone"
+                android:hint="Office Number"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/txtMail"
+                android:layout_margin="5dp"
+                android:inputType="textEmailAddress"
+                android:hint="EMail ID [ Optional ]"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/txtWeb"
+                android:inputType="text"
+                android:layout_margin="5dp"
+                android:hint="Website [ Optional ]"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            app:errorTextAppearance="@style/error_appearance"
+            app:errorEnabled="true"
+            android:id="@+id/tinpl_cperson"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/txtContactPerson"
+                android:inputType="textPersonName"
+                android:layout_margin="5dp"
+                android:hint="Person to Contact "/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            app:errorTextAppearance="@style/error_appearance"
+            app:errorEnabled="true"
+            android:id="@+id/tinpl_cperson_no"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/txtCPersonNumber"
+                android:inputType="phone"
+                android:layout_margin="5dp"
+                android:hint="Contact Person's Number "/>
+
+        </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                app:errorTextAppearance="@style/error_appearance"
+                app:errorEnabled="true"
+                android:id="@+id/tinpl_log_pass"
+                app:passwordToggleEnabled="true"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextTheme"
+                    android:id="@+id/txtPassword"
+                    android:inputType="textPassword"
+                    android:layout_margin="5dp"
+                    android:hint="Specify Login Password"/>
+
+            </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextTheme"
+                android:id="@+id/txtDescription"
+                android:inputType="textImeMultiLine"
+                android:layout_margin="5dp"
+                android:lines="8"
+                android:hint="Short Description [ Optional ] "/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@drawable/def_btn_selector"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:id="@+id/registerbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        />
+</RelativeLayout>

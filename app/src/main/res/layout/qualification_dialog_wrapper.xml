@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_background"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/edBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:text="BACK" />
+
+
+
+    <FrameLayout
+
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edBackButton"
+        android:layout_above="@+id/btnupdateqqualification"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE SELECTION"
+        android:background="@drawable/def_btn_selector"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/btnupdateqqualification"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        />
+
+</RelativeLayout>

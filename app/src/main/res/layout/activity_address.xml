@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dlg_background"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/edBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_blue_generic"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/back"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:drawablePadding="10dp"
+        android:layout_toLeftOf="@+id/edUpdate"
+        android:text="BACK" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inp_place"
+        android:layout_width="match_parent"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextTheme"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="Place" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spnState"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:theme="@style/ThemeSpinner" />
+
+    <Spinner
+        android:id="@+id/spnDistrict"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:theme="@style/ThemeSpinner" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inp_pin"
+        android:layout_width="match_parent"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextTheme"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="Pincode" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <Button
+            android:id="@+id/edUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/def_btn_selector"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="12dp"
+            android:layout_centerHorizontal="true"
+            android:text="Save Address" />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

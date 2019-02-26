@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#19a8ff</color>
+    <color name="colorPrimaryDark">#08a8ff</color>
+    <color name="colorAccent">#767575</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimaryAlpha">#19a8ff</color>
+    <color name="sendotp_grey">#636363</color>
+
+    <color name="sendotp_medium_grey">#B0B0B0</color>
+
+    <color name="sendotp_light_grey">#D9D9D9</color>
+
+    <color name="logocolortwo">#ec262e</color>
+
+
+</resources>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<ImageView-->
+        <!--android:id="@+id/imglogo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_margin="20dp"-->
+        <!--app:srcCompat="@drawable/innerlogo" />-->
+
+
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:id="@+id/img_profile"-->
+        <!--android:layout_width="128dp"-->
+        <!--android:layout_height="128dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@+id/imglogo"-->
+        <!--android:layout_margin="10dp"-->
+        <!--app:srcCompat="@drawable/user"-->
+        <!--app:civ_border_width="5dp"-->
+        <!--app:civ_border_color="#FFFFFF"-->
+        <!--/>-->
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_below="@+id/img_profile"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_margin="20dp"-->
+        <!--android:id="@+id/action_card"-->
+        <!--android:elevation="3dp"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<Switch-->
+                <!--android:id="@+id/activeswitch"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:switchPadding="10dp"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="Active" />-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/imglogout"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@color/white"-->
+                <!--android:layout_margin="10dp"-->
+                <!--app:srcCompat="@drawable/ic_power_settings_new_black_24dp" />-->
+
+
+        <!--</RelativeLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_below="@+id/img_profile"-->
+                <!--android:id="@+id/personalinfo"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_margin="20dp"-->
+                <!--android:elevation="3dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@color/colorPrimary"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:text="PERSONAL INFORMATION"-->
+                        <!--android:gravity="left"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"-->
+                        <!--android:layout_below="@+id/imgPic"-->
+                        <!--android:id="@+id/txtcaption_two"-->
+                        <!--android:drawableRight="@drawable/pencil"-->
+                        <!--/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:padding="2dp"-->
+                        <!--android:text="NAME"-->
+
+                        <!--/>-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:layout_marginTop="2dp"-->
+                        <!--android:background="@color/logocolortwo"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/txtdspname"-->
+                        <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"-->
+                        <!--android:padding="2dp"-->
+                        <!--android:gravity="right"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="DATE OF BIRTH"-->
+                        <!--android:padding="2dp"-->
+
+                        <!--/>-->
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:layout_marginTop="2dp"-->
+                        <!--android:background="@color/logocolortwo"/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/txtdspdob"-->
+                        <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"-->
+                        <!--android:padding="2dp"-->
+                        <!--android:gravity="right"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="GENDER"-->
+                        <!--android:padding="2dp"-->
+
+                        <!--/>-->
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:layout_marginTop="2dp"-->
+                        <!--android:background="@color/logocolortwo"/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/txtdsgender"-->
+                        <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"-->
+                        <!--android:padding="2dp"-->
+                        <!--android:gravity="right"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="CONTACT NO."-->
+                        <!--android:padding="2dp"-->
+
+                        <!--/>-->
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:layout_marginTop="2dp"-->
+                        <!--android:background="@color/logocolortwo"/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/txtdspcontact"-->
+                        <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"-->
+                        <!--android:padding="2dp"-->
+                        <!--android:gravity="right"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="EMAIL"-->
+                        <!--android:padding="2dp"-->
+
+                        <!--/>-->
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:layout_marginTop="2dp"-->
+                        <!--android:background="@color/logocolortwo"/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/txtdspemail"-->
+                        <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"-->
+                        <!--android:padding="2dp"-->
+                        <!--android:gravity="right"-->
+                        <!--/>-->
+
+
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_below="@+id/personalinfo"-->
+                <!--android:id="@+id/educationinfo"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_margin="20dp"-->
+                <!--android:elevation="3dp"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@color/colorPrimary"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:text="EDUCATIONAL INFORMATION"-->
+                        <!--android:drawableRight="@drawable/pencil"-->
+                        <!--android:gravity="left"-->
+                        <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"-->
+                        <!--android:layout_below="@+id/imgPic"-->
+                        <!--android:padding="10dp"-->
+
+                        <!--/>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:id="@+id/layout_education"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_below="@+id/educationinfo"-->
+                <!--android:id="@+id/experienceinfo"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_margin="20dp"-->
+                <!--android:elevation="3dp"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@color/colorPrimary"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:text="PROFESSIONAL EXPERIENCE"-->
+                        <!--android:gravity="left"-->
+                        <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"-->
+                        <!--android:layout_below="@+id/imgPic"-->
+                        <!--android:drawableRight="@drawable/pencil"-->
+                        <!--android:padding="10dp"-->
+
+                        <!--/>-->
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_below="@+id/experienceinfo"-->
+                <!--android:id="@+id/resumecard"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_margin="20dp"-->
+                <!--android:elevation="3dp"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@color/colorPrimary"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:text="RESUME"-->
+                        <!--android:drawableRight="@drawable/pencil"-->
+                        <!--android:gravity="left"-->
+                        <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"-->
+                        <!--android:padding="10dp"-->
+
+                        <!--/>-->
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignParentLeft="true"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:gravity="center_vertical"-->
+                            <!--android:text="Download Resume "-->
+                            <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"-->
+                            <!--android:padding="10dp"-->
+                            <!--/>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:layout_height="wrap_content">-->
+
+
+                            <!--<ImageButton-->
+                                <!--android:id="@+id/imageButton2"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:background="@color/white"-->
+                                <!--android:layout_gravity="center_vertical"-->
+                                <!--android:padding="2dp"-->
+                                <!--android:layout_margin="4dp"-->
+                                <!--app:srcCompat="@drawable/ic_download" />-->
+
+
+                        <!--</LinearLayout>-->
+
+
+                    <!--</RelativeLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+        <!--</LinearLayout>-->
+
+
+
+
+</RelativeLayout>

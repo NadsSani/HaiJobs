@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_height="128dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_margin="10dp"
+        android:id="@+id/card_profiles"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/innerlogo"
+                android:id="@+id/img_profile"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/img_profile"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/candidate_name"
+                    android:layout_margin="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/response_heading"
+                    android:id="@+id/line21"
+                    android:background="@color/logocolortwo"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/candidate_qualification"
+                    android:text="Qualification"
+                    android:layout_margin="5dp"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/candidate_location"
+                    android:text="Location"
+                    android:layout_margin="5dp"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
